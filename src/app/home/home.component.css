@@ -1,0 +1,35 @@
+
+.jumbotron {
+  background-size: cover;
+  background-position: center;
+  padding: 2rem 1rem;
+}
+
+.display-3 {
+  font-weight: bold;
+  font-size: 3rem;
+  color: rgba(37, 31, 31, 0.871);
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgba(37, 31, 31, 0.871);
+}
+
+.btn-primary {
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #23527c;
+  border-color: #1d4e7a;
+}
+

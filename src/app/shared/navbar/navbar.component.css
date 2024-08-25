@@ -29,5 +29,46 @@
 
   .fixed-right
   {
-    justify-content: right;
+
+    position: relative !important;
+    right: 0;
+    top: 0;
+    height: auto;
+    width: auto;
+    z-index: 1030; /* Ensure it is on top of other elements */
+  }
+
+  .navbar-nav {
+    margin-left: auto; /* Push items to the right */
+  }
+
+  .navbar-toggler {
+    margin-left: auto; /* Aligns the toggle button to the right */
+  }
+  
+
+  .icon {
+    border: 2px solid white; /* White border */
+    background-image: url('/src/app/img/burger-menu-left.svg'); /* Adjust path as needed */
+    background-size: contain; /* Ensure the image fits the button */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    background-position: center; /* Center the image */
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none; /* Remove default focus shadow */
+  }
+  
+  .navbar-toggler-icon[_ngcontent-ng-c3214578677]
+  {
+    background-image: none;
   }
