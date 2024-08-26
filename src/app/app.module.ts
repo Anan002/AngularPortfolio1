@@ -10,6 +10,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
+import { HamMenuIconComponent } from './shared/icons/ham-menu-icon/ham-menu-icon.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
     PortfolioComponent,
     ResumeComponent,
     ContactComponent,
-    NavbarComponent
+    NavbarComponent,
+    HamMenuIconComponent
   ],
   imports: [
     BrowserModule,
