@@ -34,3 +34,7 @@
   border-color: #1d4e7a;
 }
 
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+}
