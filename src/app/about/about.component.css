@@ -1,0 +1,52 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .cart {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .profile-cart {
+    background-color: #f5f5f5;
+    flex-direction: column;
+    text-align: center;
+    width:50%;
+    margin-right: auto;
+  }
+  
+  .interests-cart {
+    background-color: #e0f7fa;
+    flex-direction: column;
+    text-align: center;
+    width:50%;
+    margin-left: auto;
+  }
+  
+  .profile-image, .gym-image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    margin-left: 20px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
