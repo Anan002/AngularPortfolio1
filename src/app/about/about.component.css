@@ -12,13 +12,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex: 1; 
   }
   
   .profile-cart {
     background-color: #f5f5f5;
     flex-direction: column;
     text-align: center;
-    width:50%;
+    width: 100%; 
     margin-right: auto;
   }
   
@@ -26,7 +27,7 @@
     background-color: #e0f7fa;
     flex-direction: column;
     text-align: center;
-    width:50%;
+    width: 100%; 
     margin-left: auto;
   }
   
@@ -50,3 +51,12 @@
     cursor: pointer;
   }
   
+  @media (min-width: 768px) {
+    .about-container {
+      flex-direction: column;
+    }
+  
+    .profile-cart, .interests-cart {
+      width: 50%; /* Adjust width for larger screens */
+    }
+  }
