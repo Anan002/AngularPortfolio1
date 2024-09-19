@@ -9,7 +9,7 @@ import { filter } from 'rxjs/operators';
 })
 export class AppComponent {
   title = 'Anandandevprotfolio';
-  isLoading = false;
+  isLoading = true;
 
   constructor(private router: Router) {
     this.router.events

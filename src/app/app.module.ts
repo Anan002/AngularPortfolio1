@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { HamMenuIconComponent } from './shared/icons/ham-menu-icon/ham-menu-icon.component';
+import { LoaderComponent } from './loader/loader.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { HamMenuIconComponent } from './shared/icons/ham-menu-icon/ham-menu-icon
     ResumeComponent,
     ContactComponent,
     NavbarComponent,
-    HamMenuIconComponent
+    HamMenuIconComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
