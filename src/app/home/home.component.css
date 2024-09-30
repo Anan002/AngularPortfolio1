@@ -19,9 +19,9 @@
 }
 
 .btn-primary {
-  background-color: #337ab7;
-  border-color: #2e6da4;
-  color: #fff;
+  background-color: #d7d736;
+  border-color: #d7d736;
+  color: #232323;
   padding: 10px 20px;
   font-size: 18px;
   font-weight: bold;
@@ -30,8 +30,9 @@
 }
 
 .btn-primary:hover {
-  background-color: #23527c;
-  border-color: #1d4e7a;
+  background-color: #d7d736;
+  border-color: #d7d736;
+  color: #232323;
 }
 
 .bg-cover {

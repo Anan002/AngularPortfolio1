@@ -1,9 +1,14 @@
 .about-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-  }
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background-image: url("/assets/AboutBg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.5);
+}
   
   .cart {
     border-radius: 10px;
@@ -39,7 +44,7 @@
   }
   
   .interests-cart {
-    background-color: #e0f7fa;
+    background-color: #f5f5f5;
     flex-direction: column;
     text-align: center;
     width: 100%; 
@@ -58,7 +63,7 @@
   }
   
   button {
-    background-color: #007bff;
+    background-color: #247a24;
     color: white;
     border: none;
     padding: 10px 20px;
