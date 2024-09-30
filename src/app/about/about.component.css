@@ -4,10 +4,11 @@
   gap: 20px;
   padding: 20px;
   background-image: url("/assets/AboutBg.jpg");
-  background-size: cover;
+  background-size: 100vw 100vh; /* Adjust background size to full screen */
   background-position: center;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh; /* Add height to container to ensure full screen coverage */
 }
   
   .cart {
@@ -36,19 +37,29 @@
 }
 
   .profile-cart {
-    background-color: #f5f5f5;
     flex-direction: column;
     text-align: center;
     width: 100%; 
     margin-right: auto;
+     /* Add glass morphism effect */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  color: #fff;
   }
   
   .interests-cart {
-    background-color: #f5f5f5;
     flex-direction: column;
     text-align: center;
     width: 100%; 
     margin-left: auto;
+     /* Add glass morphism effect */
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  color: #fff;
   }
   
   .profile-image, .gym-image {
@@ -63,7 +74,7 @@
   }
   
   button {
-    background-color: #247a24;
+    background-color: #235923;
     color: white;
     border: none;
     padding: 10px 20px;
