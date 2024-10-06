@@ -64,10 +64,18 @@
     color: #666;
 }
 
-/* Media Query for Small Screens (Mobile) */
+/* Responsive Layout - Mobile Devices (Two Cards per Row) */
 @media (max-width: 768px) {
     .album-card {
-        width: 50%; /* Make each card take up about 45% of the container's width */
-        
+        width: 50%; /* Two cards per row */
+        margin: 10px;
+    }
+}
+
+/* Very small devices like phones */
+@media (max-width: 480px) {
+    .album-card {
+        width: 90%; /* One card per row */
+        margin: 5px;
     }
 }
