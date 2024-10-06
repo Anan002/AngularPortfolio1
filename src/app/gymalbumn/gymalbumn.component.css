@@ -28,7 +28,7 @@
 
 .album-card {
     margin: 20px;
-    width: 300px;
+    width: 300px; /* Default card width */
     height: 350px;
     background-color: white;
     border: 1px solid #ccc;
@@ -62,4 +62,12 @@
 .photo-info p {
     font-size: 14px;
     color: #666;
+}
+
+/* Media Query for Small Screens (Mobile) */
+@media (max-width: 768px) {
+    .album-card {
+        width: 45%; /* Make each card take up about 45% of the container's width */
+        margin: 10px; /* Reduce margin for better spacing */
+    }
 }

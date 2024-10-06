@@ -8,7 +8,7 @@
   background-position: center;
   background-blend-mode: multiply;
   background-color: rgba(0, 0, 0, 0.5);
-  height: 100vh; /* Add height to container to ensure full screen coverage */
+  
 }
   
   .cart {
