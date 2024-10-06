@@ -35,18 +35,35 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     z-index: 2; /* Ensure card content appears above the video */
+    transition: transform 0.3s ease; /* Add transition for smooth effect */
 }
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+  }
 
+  .album-card:hover {
+    animation: bounce 0.5s ease;
+  }
+  
 .photo-container {
-    height: 250px;
-    overflow: hidden;
+    height: 250px;  /* Adjust based on your desired height */
+    width: 100%;    /* Make sure the width fits the container */
+    overflow: hidden;  /* This hides anything that overflows */
     border-radius: 10px 10px 0 0;
+    display: flex;  /* Align items properly */
+    justify-content: center;  /* Centers the image horizontally */
+    align-items: center;  /* Centers the image vertically */
 }
 
 .photo-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%;  /* The image will stretch to fit the width */
+    height: 100%; /* The image will stretch to fit the height */
+    object-fit: contain; /* Ensures the whole image fits in the container */
 }
 
 .photo-info {
