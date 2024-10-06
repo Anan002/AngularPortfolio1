@@ -67,7 +67,7 @@
 /* Media Query for Small Screens (Mobile) */
 @media (max-width: 768px) {
     .album-card {
-        width: 45%; /* Make each card take up about 45% of the container's width */
-        margin: 10px; /* Reduce margin for better spacing */
+        width: 50%; /* Make each card take up about 45% of the container's width */
+        
     }
 }
