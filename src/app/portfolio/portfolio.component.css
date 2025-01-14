@@ -1,0 +1,120 @@
+/* Portfolio container */
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #fff;
+  padding: 10px; /* Reduce padding for smaller screens */
+  position: relative;
+  overflow: hidden;
+  flex-wrap: wrap; /* Allow content wrapping */
+}
+
+/* Tiles wrapper with responsive grid */
+.tiles-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Smaller minimum size for better fit */
+  gap: 10px;
+  background-color: #0f0e0e;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Enhanced shadow around the tiles */
+  max-width: 90%; /* Adjust max width for smaller screens */
+  width: 100%;
+  position: relative;
+}
+
+/* Individual project tile */
+.project-tile {
+  background-color: #f7f7f7;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow to individual tiles */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  }
+}
+
+/* Project image */
+.project-image {
+  width: 100%;
+  height: 120px; /* Reduce height for smaller screens */
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Project content */
+.project-content {
+  padding: 10px;
+  text-align: center;
+
+  h2 {
+    font-size: 0.875rem; /* Smaller font size for mobile */
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-size: 0.90rem; /* Smaller font size for mobile */
+    color: #555;
+  }
+}
+
+/* Responsive media queries */
+@media screen and (max-width: 768px) {
+  .tiles-wrapper {
+    gap: 8px; /* Reduce gap between tiles */
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .project-tile {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow on smaller screens */
+  }
+
+  .project-image {
+    height: 100px; /* Further reduce height */
+  }
+
+  .project-content {
+    h2 {
+      font-size: 0.75rem;
+    }
+
+    p {
+      font-size: 0.65rem;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portfolio-container {
+    padding: 5px; /* Reduce padding on very small screens */
+  }
+
+  .tiles-wrapper {
+    gap: 5px;
+  }
+
+  .project-image {
+    height: 80px; /* Minimized height for very small screens */
+  }
+
+  .project-content {
+    h2 {
+      font-size: 0.7rem;
+    }
+
+    p {
+      font-size: 0.6rem;
+    }
+  }
+}

@@ -1,74 +1,97 @@
 .navbar {
-    padding: 1rem 2rem;
-  }
-  
-  .navbar-brand {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .nav-link {
-    color: #337ab7;
-    transition: color 0.2s ease;
-  }
-  
-  .nav-link:hover {
-    color: black;
-  }
-  
-  .navbar-toggler {
-    border: none;
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    line-height: 1;
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
+  padding: 1rem 2rem;
+}
 
-  .fixed-right
-  {
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
 
-    position: relative !important;
-    right: 0;
-    top: 0;
-    height: auto;
-    width: auto;
-    z-index: 1030; /* Ensure it is on top of other elements */
-  }
+.nav-link {
+  color: #0d0e0f;
+  position: relative; /* Needed for positioning the dot */
+  padding-left: 1.5rem; /* Space for the dot */
+  transition: color 0.2s ease;
+}
 
-  .navbar-nav {
-    margin-left: auto; /* Push items to the right */
-  }
+.nav-link::before {
+  content: '';
+  position: absolute;
+  left: 0; /* Position the dot to the left of the text */
+  top: 50%;
+  width: 6px; /* Dot size */
+  height: 6px;
+  background-color: black;
+  border-radius: 50%;
+  transform: translateY(-50%) scale(0); /* Initial state (invisible) */
+  transition: transform 0.3s ease; /* Animation */
+}
 
-  .navbar-toggler {
-    margin-left: auto; /* Aligns the toggle button to the right */
-  }
-  
+.nav-link:hover {
+  color: rgb(25, 24, 24);
+}
 
-  .icon {
-    border: 2px solid white; /* White border */
-    background-image: url('/src/app/img/burger-menu-left.svg'); /* Adjust path as needed */
-    background-size: contain; /* Ensure the image fits the button */
-    background-repeat: no-repeat; /* Prevent image from repeating */
-    background-position: center; /* Center the image */
-    width: 40px; /* Adjust size as needed */
-    height: 40px; /* Adjust size as needed */
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;
-  }
-  
-  .navbar-toggler:focus {
-    box-shadow: none; /* Remove default focus shadow */
-  }
-  
-  .navbar-toggler-icon[_ngcontent-ng-c3214578677]
-  {
-    background-image: none;
-  }
+.nav-link:hover::before {
+  transform: translateY(-50%) scale(1); /* On hover, make the dot appear */
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* .fixed-right {
+  position: relative !important;
+  right: 0;
+  top: 0;
+  height: auto;
+  width: auto;
+  z-index: 1030;
+} */
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+}
+
+.icon {
+  border: 2px solid white;
+  background-image: url('/src/app/img/burger-menu-left.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.navbar-toggler-icon[_ngcontent-ng-c3214578677] {
+  background-image: none;
+}
+
+.collapse {
+  display: none;
+}
+
+.collapse.show {
+  display: block;
+}
