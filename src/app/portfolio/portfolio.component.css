@@ -120,7 +120,7 @@
   text-align: center;
 
   h2 {
-    font-size: 1.1rem; /* Smaller font size for mobile */
+    font-size: 2rem; /* Smaller font size for mobile */
     margin-bottom: 5px;
     text-transform: uppercase;
   }
