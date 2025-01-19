@@ -120,13 +120,13 @@
   text-align: center;
 
   h2 {
-    font-size: 0.875rem; /* Smaller font size for mobile */
+    font-size: 1.1rem; /* Smaller font size for mobile */
     margin-bottom: 5px;
     text-transform: uppercase;
   }
 
   p {
-    font-size: 0.90rem; /* Smaller font size for mobile */
+    font-size: 1.5rem; /* Smaller font size for mobile */
     color: #555;
   }
 }
