@@ -1,10 +1,12 @@
 <div class="portfolio-container">
-  <div class="tiles-wrapper">
-    <div class="project-tile" *ngFor="let project of projects" >
-      <img [src]="project.image" [alt]="project.title" class="project-image" />
-      <div class="project-content">
-        <h2>{{ project.title }}</h2>
-        <p>{{ project.description }}</p>
+  <div class="tiles-wrapper swiper-container">
+    <div class="swiper-wrapper">
+      <div class="project-tile swiper-slide" *ngFor="let project of projects">
+        <img [src]="project.image" [alt]="project.title" class="project-image" />
+        <div class="project-content">
+          <h2>{{ project.title }}</h2>
+          <p>{{ project.description }}</p>
+        </div>
       </div>
     </div>
   </div>
