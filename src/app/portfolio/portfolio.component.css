@@ -74,6 +74,8 @@
 @media screen and (max-width: 768px) {
   .tiles-wrapper {
     display: none; /* Hide the tiles wrapper on mobile */
+    background-color: #f7f7f7;
+    box-shadow: none; /* Enhanced shadow around the tiles */
   }
 
   .swiper-container {
@@ -81,27 +83,50 @@
     width: 100%; /* Full width for swiper container */
   }
 
-  .project-tile {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Lighter shadow on smaller screens */
+/* Individual project tile */
+.project-tile {
+  background-color: #f7f7f7;
+  color: #333;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow to individual tiles */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  touch-action: none; /* Disable touch actions on individual tiles */
+  height: auto;
+
+  &:hover {
+    transform: translateY(-5px); /* Subtle hover effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+  }
+}
+
+.project-image {
+  width: 100%;
+  height: 120px; /* Reduce height for smaller screens */
+  object-fit: contain;
+  border-bottom: 1px solid #ddd;
+}
+
+
+.project-content {
+  padding: 10px;
+  text-align: center;
+
+  h2 {
+    font-size: 0.875rem; /* Smaller font size for mobile */
+    margin-bottom: 5px;
+    text-transform: uppercase;
   }
 
-  .project-image {
-    height: 100px; /* Further reduce height */
+  p {
+    font-size: 0.90rem; /* Smaller font size for mobile */
+    color: #555;
   }
+}
 
-  .project-content {
-    h2 {
-      font-size: 0.75rem;
-    }
-
-    p {
-      font-size: 0.65rem;
-    }
-  }
-
-  .project-content h2 {
-    display: none; /* Hide title on mobile */
-  }
 }
 
 @media screen and (max-width: 480px) {
