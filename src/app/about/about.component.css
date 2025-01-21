@@ -88,14 +88,19 @@
   }
   
   button {
-    background-color: #235923;
-    color: white;
+    /* background-color: #235923;
+    color: white; */
+    background-color: #FF69B4; /* Hot Pink */
+    color: #FFFFFF; /* White text for contrast */
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
   }
-  
+  button:hover {
+    background-color: #FF1493; /* Deep Pink on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
   @media (min-width: 768px) {
     .about-container {
       flex-direction: column;
