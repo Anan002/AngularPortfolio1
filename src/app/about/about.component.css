@@ -1,16 +1,30 @@
 .about-container {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 20px;
   background-image: url("/assets/AboutBg.jpg");
-  background-size: 100vw 100vh; /* Adjust background size to full screen */
-  background-position: center;
+  background-size: 100vw 100vh; */
+  /* background-position: center;
   background-blend-mode: multiply;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5); */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: linear-gradient(270deg, #8A2BE2, #9400D3, #9932CC, #BA55D3);
+  background-size: 400% 400%;
+  animation: gradientAnimation 8s ease infinite;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   
 }
-  
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
   .cart {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
