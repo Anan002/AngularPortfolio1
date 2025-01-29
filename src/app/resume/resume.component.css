@@ -9,7 +9,7 @@
   }
 
 
-  .resume-container iframe {
+  .resume-container embed {
     border: none;
     border-radius: 10px;
     width: 100%; 
@@ -19,9 +19,3 @@
   }
 
 
-  /* Media Query for larger screens */
-  @media (min-width: 768px) {
-    .resume-container iframe {
-      width: 80%; /* On medium to large screens, width will be 80% */
-    }
-  }
