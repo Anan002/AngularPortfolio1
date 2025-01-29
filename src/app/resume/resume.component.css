@@ -6,6 +6,7 @@
     box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2); /* Slightly more prominent shadow */
     color: #ffffff; /* White text color for contrast */
     overflow: hidden; /* Prevents any overflow outside the rounded corners */
+    height: 100vh; /* Set the container to full height of the screen */
   }
 
 
@@ -14,7 +15,7 @@
     border-radius: 10px;
     width: 100%; 
     max-width: 90%; 
-    height: 600px;
+    height: 100%; /* Make embed fill the container height */
 
   }
 
